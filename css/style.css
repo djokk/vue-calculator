@@ -1,0 +1,144 @@
+@import url(../css/font.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: url(../img/Calculator.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+header .calculator {
+  width: 224px;
+  height: 319px;
+  border: 1px solid #745c49;
+  border-radius: 7px;
+  background-color: rgba(108, 51, 32, 0.5);
+  -webkit-box-shadow: 0px 25px 30px 0px rgba(0, 0, 0, 0.41);
+  box-shadow: 0px 25px 30px 0px rgba(0, 0, 0, 0.41);
+}
+
+
+header .calculator .input-text {
+  background: url(../img/Blur.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+.fullNum{
+  font-family: 'HelveticaNeue';
+  font-size: 20px;
+  font-weight: 500;
+  color: #afaeae;
+  position: absolute;
+  top: 3px;
+  left: 10px;
+
+}
+
+header .calculator .input {
+  width: 100%;
+  height: 82px;
+  border: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  outline: none;
+  padding: 30px 16px 10px 16px;
+  text-align: right;
+  font-family: 'HelveticaNeue';
+  font-size: 44px;
+  font-weight: 500;
+  color: #fff;
+  background-color: rgba(108, 51, 32, 0.4);
+}
+
+header .calculator .input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+header .calculator .input::-webkit-outer-spin-button,
+header .calculator .input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+header .calculator .d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+header .calculator .wh {
+  width: 56px;
+  height: 47px;
+}
+
+header .calculator .wh2 {
+  width: 112px;
+  height: 47px;
+}
+
+header .calculator button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+header .calculator button:active {
+  opacity: .8;
+}
+
+header .calculator .bg {
+  background: #e0e0e0;
+}
+
+header .calculator .bg2 {
+  background: #f79439;
+  color: #fff;
+}
+
+header .calculator .br {
+  border-right: 1px solid #8e8e8e;
+  border-bottom: 1px solid #8e8e8e;
+}
+
+header .calculator .br2 {
+  border-bottom: 1px solid #8e8e8e;
+}
+
+header .calculator .br3 {
+  border-right: 1px solid #8e8e8e;
+}
+
+header .calculator .br-left {
+  border-bottom-left-radius: 7px;
+}
+
+header .calculator .br-right {
+  border-bottom-right-radius: 7px;
+}

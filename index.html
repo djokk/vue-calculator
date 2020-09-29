@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+   <header>
+       <div id="app">
+        <div class="calculator">
+            <div class="input-text">
+                <div class="fullNum">{{ fullNum || '0' }}</div>
+                <!-- <input v-on:keyup.enter="calc()" type="text" placeholder="0">{{ result || '0' }}> -->
+                <div class="input" placeholder="0">{{ result || '0' }}</div>
+            </div>
+             <div class="d-flex">
+                 <button v-on:click="reset()" class="wh bg br">C</button>
+                 <button v-on:click="plusMinus()" class="wh bg br">+/-</button>
+                 <button v-on:click="percent()" class="wh bg br">%</button>
+                 <button v-on:click="divide()" class="wh bg2 br2">/</button>
+             </div>
+             <div class="d-flex">
+                 <!-- <button v-on:click="input(7)" class="wh bg br">7</button> -->
+                 <button v-on:click="input('7')" class="wh bg br">7</button>
+                 <!-- <button v-on:click="input(8)" class="wh bg br">8</button> -->
+                 <button v-on:click="input('8')" class="wh bg br">8</button>
+                 <!-- <button v-on:click="input(9)" class="wh bg br">9</button> -->
+                 <button v-on:click="input('9')" class="wh bg br">9</button>
+                 <!-- <button v-on:click="input(operations[2])" class="wh bg2 br2">x</button> -->
+                 <button v-on:click="times()" class="wh bg2 br2">x</button>
+             </div>
+             <div class="d-flex">
+                 <!-- <button v-on:click="input(4)" class="wh bg br">4</button> -->
+                 <button v-on:click="input('4')" class="wh bg br">4</button>
+                 <!-- <button v-on:click="input(5)" class="wh bg br">5</button> -->
+                 <button v-on:click="input('5')" class="wh bg br">5</button>
+                 <!-- <button v-on:click="input(6)" class="wh bg br">6</button> -->
+                 <button v-on:click="input('6')" class="wh bg br">6</button>
+                 <!-- <button v-on:click="input(operations[1])" class="wh bg2 br2">-</button> -->
+                 <button v-on:click="minus()" class="wh bg2 br2">-</button>
+             </div>
+             <div class="d-flex">
+                 <!-- <button v-on:click="input(1)" class="wh bg br">1</button> -->
+                 <button v-on:click="input('1')" class="wh bg br">1</button>
+                 <!-- <button v-on:click="input(2)" class="wh bg br">2</button> -->
+                 <button v-on:click="input('2')" class="wh bg br">2</button>
+                 <!-- <button v-on:click="input(3)" class="wh bg br">3</button> -->
+                 <button v-on:click="input('3')" class="wh bg br">3</button>
+                 <!-- <button v-on:click="input(operations[0])" class="wh bg2 br2">+</button> -->
+                 <button v-on:click="plus()" class="wh bg2 br2">+</button>
+             </div>
+             <div class="d-flex">
+                 <!-- <button v-on:click="input(0)" class="wh2 bg br3 br-left">0</button> -->
+                 <button v-on:click="input('0')" class="wh2 bg br3 br-left">0</button>
+                 <button v-on:click="tochka()" class="wh bg br3">.</button>
+                 <button v-on:click="equal()" class="wh bg2 br-right">=</button>
+             </div>
+        </div>
+       </div>
+   </header>
+
+   <script src="js/main.js"></script>
+</body>
+</html>
